@@ -1,0 +1,48 @@
+#Here you have our Quizz
+
+question1 = input("Quelle est la couleur de la licorne blanche d'Emmanuel Macron?")
+
+compteur = 3 
+
+while question1 != "blanche" :
+    compteur -=1 
+    print("compteur:", compteur)
+    if compteur !=0 :
+        print(f'Try again ^_^, il te reste {compteur} tentatives')
+        question1 = input("Essaie encore, quelle est la couleur de la licorne blanche de Mr le President?" )
+    
+    else :
+        print("you screwed up")
+        break
+    
+if question1 == "blanche" :
+        print("Bravo Jacquot, tu n'as pas besoin de lunettes de chez Optic 2000 !")
+
+question2 = input("Quand auront lieu les prochains JO de Paris?")
+
+while question2 != "2024" :
+    compteur -=1
+    if compteur !=0 :
+        print(f"Try again ^^, il te reste {compteur} tentatives")
+
+    else :
+        print("You screwed up!")
+        break 
+
+if question2 == "2024" :
+    print("Bravo Jean Jacquot (^_^), tu n'es pas un poisson rouge")
+   
+
+question3 = input("quel est le jour de Noël?")
+
+while question3 !="25 décembre" :
+    compteur -=1
+    if compteur !=0 :
+         print(f'Try again Jean Jacques, il te reste {compteur}  tentatives')
+
+    else : 
+        print("You screwed up!")
+        break
+
+if question3 == "25 décembre" :
+    print("Bravo Émile, tu te rappelles du moment où tu reçois tes cadeaux !")
